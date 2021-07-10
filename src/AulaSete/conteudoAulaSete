@@ -3,5 +3,4 @@
 - java.lang;
 - java.util;
 - herança;
-- sobreescrita;
-- polimorfismo;
+- sobreescrita (override);
