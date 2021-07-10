@@ -8,7 +8,7 @@ public class Pessoa {
 
     DecimalFormat df = new DecimalFormat("#.##");
 
-    void calculoImc(){
+    public void calculoImc(){
         imc = peso / (altura * altura);
 
         System.out.println("O IMC do " + nome + " é: " + imc);
