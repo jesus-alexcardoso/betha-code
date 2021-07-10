@@ -6,8 +6,6 @@ public class CasaMain {
 
         Casa casa = new Casa("Artur Souza", 3,2,180.00);
 
-
-
         System.out.println(casa);
 
     }
