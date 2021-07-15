@@ -1,0 +1,10 @@
+Comandos GIT:
+
+
+-----------------------------------------------------------
+Estrutura de projetos utilizados na Betha:
+- model: classes (pessoa, acaoFiscal, etc)
+- repository: métodos que acessam o banco
+- service: regras de negócio
+
+-----------------------------------------------------------

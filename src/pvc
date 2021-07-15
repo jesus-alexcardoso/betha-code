@@ -1,3 +1,20 @@
+Comandos GIT:
+Setar usuário
+    git config --global user.name "Leonardo Comelli"
+
+Setar email
+    git config --global user.email leonardo@software-ltda.com.br
+
+Adicionar um arquivo em específico
+    git add meu_arquivo.txt
+
+Adicionar um diretório em específico
+    git add meu_diretorio
+
+Adicionar todos os arquivos/diretórios
+    git add .
+
+-----------------------------------------------------------
 Estrutura de projetos utilizados na Betha:
 - model: classes (pessoa, acaoFiscal, etc)
 - repository: métodos que acessam o banco
