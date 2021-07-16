@@ -35,6 +35,7 @@ public class FuncionarioModel extends PessoaFisicaModel{
     public String toString() {
         return "FuncionarioModel{" +
                 "nome=" + getNome() +
+                ", cpf=" + getDocumentoPrincipal() +
                 ", salarioBruto=" + salarioBruto +
                 ", salarioLiquido=" + salarioLiquido +
                 '}';

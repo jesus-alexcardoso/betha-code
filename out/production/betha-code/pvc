@@ -1,6 +1,24 @@
 Comandos GIT:
+Setar usuário
+    git config --global user.name "Leonardo Comelli"
 
+Setar email
+    git config --global user.email leonardo@software-ltda.com.br
 
+Clonar um repositório remoto já existente
+    git clone git@github.com:leocomelli/curso-git.git
+
+Adicionar todos os arquivos/diretórios
+    git add .
+
+Comitar tudo informando mensagem
+    git commit -m "minha mensagem de commit"
+
+Enviar arquivos/diretórios para o repositório remoto
+O primeiro push de um repositório deve conter o nome do repositório remoto e o branch.
+    git push -u origin master
+Os demais pushes não precisam dessa informação
+    git push
 -----------------------------------------------------------
 Estrutura de projetos utilizados na Betha:
 - model: classes (pessoa, acaoFiscal, etc)

@@ -35,4 +35,18 @@ public class PessoaFisicaModel extends PessoaModel{
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
+
+    @Override
+    public String toString() {
+        return "PessoaFisicaModel{" +
+                "cpf='" + cpf + '\'' +
+                ", rg='" + rg + '\'' +
+                ", sexo='" + sexo + '\'' +
+                '}';
+    }
+
+    @Override
+    public String getDocumentoPrincipal() {
+        return cpf;
+    }
 }

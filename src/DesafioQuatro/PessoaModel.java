@@ -5,6 +5,7 @@ public class PessoaModel {
     private String nome;
     private String endereco;
     private String telefone;
+    private String documento;
 
     public PessoaModel(Integer id, String nome, String endereco, String telefone) {
         this.id = id;
@@ -43,5 +44,9 @@ public class PessoaModel {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public String getDocumentoPrincipal(){
+        return documento;
     }
 }

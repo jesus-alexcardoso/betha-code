@@ -24,10 +24,12 @@ public class PessoaMain {
         double dissidio = s.nextDouble();
         System.out.println("Salário anterior: " + funcionario.getSalarioBruto());
         funcionario.dissidio(dissidio);
+        System.out.println("O CPF é: " + funcionario.getDocumentoPrincipal());
 
         //Fim do Funcionário
 
         //Início Cliente
+
         ClienteModel cliente = new ClienteModel(2,
                 "Abinadabe",
                 "Votorantim",
@@ -38,14 +40,29 @@ public class PessoaMain {
                 2500.00,
                 2000.00);
 
+        //Aumentar limite crediário
         System.out.println("-------");
         System.out.println("Informe o valor a ser acrescido no crediário do " + cliente.getNome() + ": ");
         double acrescimoCrediario = s.nextDouble();
         cliente.aumentarLimiteCrediario(acrescimoCrediario);
 
+        //Diminuir limite crediário
         System.out.println("-------");
         System.out.println("Informe o valor a ser diminuído no crediário do " + cliente.getNome() + ": ");
         double diminuirCrediario = s.nextDouble();
         cliente.diminuirLimiteCrediario(diminuirCrediario);
+
+        //Fim cliente
+
+        //Inicio Pessoa Juridica
+
+        System.out.println("-------");
+        PessoaJuridicaModel pj = new PessoaJuridicaModel(3,"Betha","Virgulino da Silva",
+                "4834310733", "00456865000167", "25416", 15246);
+
+        System.out.println(pj);
+        System.out.println("O CNPJ da empresa " + pj.getNome() + " é: " + pj.getDocumentoPrincipal());
+
+        //Fim Pessoa Juridica
     }
 }

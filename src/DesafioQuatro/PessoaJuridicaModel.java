@@ -5,7 +5,8 @@ public class PessoaJuridicaModel extends PessoaModel{
     private String inscricaoEstadual;
     private Integer cnae;
 
-    public PessoaJuridicaModel(Integer id, String nome, String endereco, String telefone, String cnpj, String inscricaoEstadual, Integer cnae) {
+    public PessoaJuridicaModel(Integer id, String nome, String endereco, String telefone,
+                               String cnpj, String inscricaoEstadual, Integer cnae) {
         super(id, nome, endereco, telefone);
         this.cnpj = cnpj;
         this.inscricaoEstadual = inscricaoEstadual;
@@ -34,5 +35,20 @@ public class PessoaJuridicaModel extends PessoaModel{
 
     public void setCnae(Integer cnae) {
         this.cnae = cnae;
+    }
+
+    @Override
+    public String toString() {
+        return "PessoaJuridicaModel{" +
+                "nome= " + getNome() +
+                ", cnpj='" + cnpj + '\'' +
+                ", inscricaoEstadual='" + inscricaoEstadual + '\'' +
+                ", cnae=" + cnae +
+                '}';
+    }
+
+    @Override
+    public String getDocumentoPrincipal() {
+        return cnpj;
     }
 }
