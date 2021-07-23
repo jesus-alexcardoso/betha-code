@@ -1,0 +1,9 @@
+17/07/2021 (perdi essa aula presencialmente)
+
+Sobrecarga de construtores e métodos
+- é quando são utilizados diversos construtores para a mesma classe;
+- o que diverge um construtor do outro, basicamente, é sua assinatura.
+-- ASSINATURA = Qtd de parâmetros e tipos dos parametros do construtor;
+
+Polimorfismo
+- utilização do Builder;

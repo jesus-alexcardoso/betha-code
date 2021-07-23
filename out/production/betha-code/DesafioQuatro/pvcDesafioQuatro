@@ -1,5 +1,4 @@
-— CRIAR UM MÉTODO getDocumentoPrincipal() EM PESSOA, sobrescrever em pessoa fisica e jurídica, um retornará o CPF e outro o CNPJ
-
+[ok] — CRIAR UM MÉTODO getDocumentoPrincipal() EM PESSOA, sobrescrever em pessoa fisica e jurídica, um retornará o CPF e outro o CNPJ
 [ok] - CRIAR UMA CLASSE PARA EXECUTAR O TESTES (PUBLIC STATIC VOID MAIN.....
 [ok] — PARA O FUNCIONÁRIO CRIAR UM MÉTODO QUE APLIQUE O DISSÍDIO NO SALÁRIO.
 [ok] — PARA O CLIENTE CRIAR UM MÉTODO PARA AUMENTAR O LIMITE E UM PARA DIMINUIR.

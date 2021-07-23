@@ -19,6 +19,7 @@ O primeiro push de um repositório deve conter o nome do repositório remoto e o
     git push -u origin master
 Os demais pushes não precisam dessa informação
     git push
+
 -----------------------------------------------------------
 Estrutura de projetos utilizados na Betha:
 - model: classes (pessoa, acaoFiscal, etc)
