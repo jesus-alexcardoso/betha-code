@@ -1,0 +1,23 @@
+24/07/2021 - Aniversário Igor :)
+
+Classe 'final'.
+- trata-se de uma classe que não pode ser extendida. se eu extender, será gerado um erro dizendo que não posso extender.
+
+Método 'final': mesma aplicação da classe.
+
+não é possível realizar override em classes/métodos 'final';
+
+
+Classe 'Object'
+- todas as classes criadas são uma extensão da classe 'Object'.
+
+
+----
+Realizada uma introdução às classes abstratas.
+- classes abstratas não podem ser instanciadas;
+- dão mais consistência ao sistema;
+
+////////////////////////
+
+sobre o exemplo passado em aula, parei no builder do funcionario.
+a ideia eh finalizar o builder e terminar o main com pelo menos 1 print;

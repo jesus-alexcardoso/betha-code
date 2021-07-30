@@ -25,7 +25,7 @@ public class FuncionarioModel {
         // primeiro construtor, que possui uma assinatura com 4 parâmetros
         new FuncionarioModel(id, nome, null, null);
 
-        //se eu usasse o construtor abaixo, então, eu estaria copiando o copiador com a assinatura
+        //se eu usasse o construtor abaixo, então, eu estaria copiando o construtor com a assinatura
         //de apenas 3 parâmetros
         //new FuncionarioModel(id, nome, null);
     }

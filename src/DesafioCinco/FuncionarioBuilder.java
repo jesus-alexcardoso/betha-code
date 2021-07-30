@@ -19,7 +19,6 @@ public class FuncionarioBuilder {
         if (tipo.equals("COORDENADOR")){
             return new CoordenadorModel(id,nome,cpf,salarioBruto);
         }
-
         return new FuncionarioModel(id, nome);
     }
 }
