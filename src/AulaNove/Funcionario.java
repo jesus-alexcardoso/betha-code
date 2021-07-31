@@ -17,9 +17,7 @@ public abstract class Funcionario {
         this.nome = nome;
     }
 
-    public Double getBonificacao() {
-        return bonificacao;
-    }
+    public abstract Double getBonificacao();
 
     public void setBonificacao(Double bonificacao) {
         this.bonificacao = bonificacao;

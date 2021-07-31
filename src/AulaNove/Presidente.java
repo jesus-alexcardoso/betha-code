@@ -7,6 +7,6 @@ public class Presidente extends Funcionario{
 
     @Override
     public Double getBonificacao() {
-        return super.getBonificacao() * 1.1;
+        return 110.00;
     }
 }

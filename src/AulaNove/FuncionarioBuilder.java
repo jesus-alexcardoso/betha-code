@@ -6,8 +6,12 @@ public class FuncionarioBuilder {
             return new Gerente(nome, bonificacao);
         } else if (tipo.equals("DIRETOR")) {
             return new Diretor(nome, bonificacao);
-        }else {
+        }else if (tipo.equals("PRESIDENTE")){
             return new Presidente(nome, bonificacao);
+        }else if (tipo.equals("SECRETARIAAG")){
+            return new SecretariaAgencia(nome, bonificacao);
+        }else {
+            return new SecretariaAdministrativa(nome, bonificacao);
         }
     }
 }
