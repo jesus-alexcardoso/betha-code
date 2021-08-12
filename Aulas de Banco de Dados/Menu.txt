@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class DesafioTresMain {
+
+    public static void main (String[] args){
+
+        Scanner s = new Scanner(System.in);
+        int exercicio;
+        boolean sair = false;
+
+        do {
+            System.out.println("\n\n>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<\n" +
+                    "Digite o número do exercício desejado: " + "\n" +
+                    "1- " + "\n" +
+                    "2- " + "\n" +
+                    "3- " + "\n" +
+                    "4- " + "\n" +
+                    "5- " + "\n" +
+                    "6- " + "\n" +
+                    "7- ");
+            System.out.print(">> ");
+            exercicio = s.nextInt();
+
+            switch (exercicio) {
+                case 1:
+                    //Exercício 1:
+                    break;
+                //Fim exercício 1.
+
+
+                case 2:
+                    //Exercício 2:
+                    break;
+                // Fim Exercício 2.
+
+
+                case 3:
+                    //Exercício 3:
+                    break;
+                //Fim exercício 3.
+
+                case 4:
+                    //Exercício 4:
+                    break;
+                //Fim exercício 4.
+
+                case 5:
+                    //Exercício 5:
+                    break;
+                //Fim exercício 5.
+
+                case 6:
+                    //Exercício 6:
+                    break;
+                //Fim exercício 6.
+
+                case 7:
+                    sair = true;
+                    break;
+
+                default:
+                    System.out.println("Exercício não encontrado. Por favor, tente novamente.");
+            }
+        }while(!sair);
+
+    }
+}

@@ -1,0 +1,3 @@
+as aulas contidas neste diretório referem-se as 3 primeiras aulas do Betha Code.
+
+foram aulas sobre banco de dados.
