@@ -9,6 +9,9 @@ public class Diretor {
     private Double salario;
     private Double bonus;
 
+    public Diretor() {
+    }
+
     public Diretor(Integer id, String nome, String cpf, Double salario, Double bonus) {
         this.id = id;
         this.nome = nome;

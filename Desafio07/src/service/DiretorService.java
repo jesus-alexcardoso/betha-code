@@ -1,6 +1,6 @@
 package service;
 
-import model.Funcionario;
+import model.Diretor;
 import util.ConnectionManager;
 
 import java.sql.Connection;
@@ -12,23 +12,24 @@ public class DiretorService implements IService<Diretor>{
     @Override
     public Diretor save(Diretor diretor) throws SQLException, ClassNotFoundException {
         Connection conn = ConnectionManager.getConnection();
-        PreparedStatement insert = conn.prepareStatement("insert into curso.funcionario values(?,?,?,?)");
-        insert.setInt(1, funcionario.getId());
-        insert.setString(2, funcionario.getNome());
-        insert.setString(3, funcionario.getCpf());
-        insert.setDouble(4, funcionario.getSalario());
+        PreparedStatement insert = conn.prepareStatement("insert into curso.diretor values(?,?,?,?,?)");
+        insert.setInt(1, diretor.getId());
+        insert.setString(2, diretor.getNome());
+        insert.setString(3, diretor.getCpf());
+        insert.setDouble(4, diretor.getSalario());
+        insert.setDouble(5, diretor.getBonus());
         insert.executeUpdate();
         conn.close();
 
-        return funcionario;
+        return diretor;
     }
 
     @Override
-    public Funcionario update(Funcionario funcionario) throws SQLException, ClassNotFoundException {
+    public Diretor update(Diretor diretor) throws SQLException, ClassNotFoundException {
         Connection conn = ConnectionManager.getConnection();
-        PreparedStatement update = conn.prepareStatement("UPDATE curso.funcionario SET nome = ? WHERE id = ?");
-        update.setString(1, funcionario.getNome());
-        update.setInt(2, funcionario.getId());
+        PreparedStatement update = conn.prepareStatement("UPDATE curso.diretor SET nome = ? WHERE id = ?");
+        update.setString(1, diretor.getNome());
+        update.setInt(2, diretor.getId());
         update.executeUpdate();
         conn.close();
 
@@ -36,10 +37,10 @@ public class DiretorService implements IService<Diretor>{
     }
 
     @Override
-    public Funcionario delete(Funcionario funcionario) throws SQLException, ClassNotFoundException {
+    public Diretor delete(Diretor diretor) throws SQLException, ClassNotFoundException {
         Connection conn = ConnectionManager.getConnection();
-        PreparedStatement statement2 = conn.prepareStatement("DELETE FROM curso.funcionario WHERE ID = ?");
-        statement2.setInt(1, funcionario.getId());
+        PreparedStatement statement2 = conn.prepareStatement("DELETE FROM curso.diretor WHERE ID = ?");
+        statement2.setInt(1, diretor.getId());
         statement2.executeUpdate();
         conn.close();
 

@@ -8,6 +8,9 @@ public class Funcionario {
     private String cpf;
     private Double salario;
 
+    public Funcionario() {
+    }
+
     public Funcionario(Integer id, String nome, String cpf, Double salario) {
         this.id = id;
         this.nome = nome;
